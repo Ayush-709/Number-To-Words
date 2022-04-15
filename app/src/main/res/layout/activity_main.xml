@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8AD2F4"
+    tools:ignore ="HardcodedText"
+    android:padding="40dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/getNumber"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="49dp"
+        android:autofillHints=""
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="Enter Number"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textColorHint="#757575"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.067"/>
+
+    <Button
+        android:id="@+id/getWords"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:padding="10dp"
+        android:text="INPUT"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/putWords"
+        app:layout_constraintTop_toBottomOf="@+id/getNumber"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="89dp" />
+
+    <TextView
+        android:id="@+id/putWords"
+        android:layout_width="match_parent"
+        android:layout_height="212dp"
+        android:background="@color/white"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:padding="20dp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/getNumber"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/getNumber"
+        app:layout_constraintTop_toBottomOf="@+id/getNumber"
+        app:layout_constraintVertical_bias="0.501" />
+
+
+    <ImageButton
+        android:id="@+id/speechbtn"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@color/black"
+        android:src="@drawable/ic_baseline_volume_up_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/putWords"
+        app:layout_constraintStart_toStartOf="@+id/putWords"
+        app:layout_constraintTop_toBottomOf="@+id/putWords"
+        android:contentDescription="speech"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
